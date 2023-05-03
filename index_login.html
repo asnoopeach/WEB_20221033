@@ -4,7 +4,7 @@
 <html>
    
     <head>
-		<title>구글 메인화면 예제</title> 
+		<title>구글메인화면로그인</title> 
         <meta name= "author" content= "학번"> 
 		<meta charset="utf-8"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,10 +20,11 @@
 		<script type="text/javascript" src="js/hover.js" defer></script>
 		<script type="text/javascript" src="js/array_test.js" defer></script>
 		<script type="text/javascript" src="js/array_test2.js" defer></script>
+		<script type="text/javascript" src="js/login.js" defer></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 	</head>
 	
-    <body onload="pop_up();">
+    <body onload="get_id()">
 		<nav class="navbar navbar-expand-lg bg-light">
   			<div class="container-fluid">
    				<a class="navbar-brand" href="#">전체메뉴</a>
@@ -62,15 +63,13 @@
           					</ul>
         				</li>
 						<li class="nav-item">
-						<button class="btn btn-outline-success" type="submit" onclick="location.href='login/login.html'">로그인</button>
+						<button class="btn btn-outline-success" type="submit" onclick="logout()">로그아웃</button>
 						</li>
       				</ul>
     			</div>
   			</div>
 		</nav>
-		<p style="text-align:left,">
-            <font size="2em" color="green">문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터 정의</font>
-        </p>
+		
         <br>
         <! br은 줄바꿈입니다.>
         <hr>
@@ -145,9 +144,7 @@
         <! 간격을 위해 줄바꿈을 여러번 추가 해줍니다.>
         <hr>
         <! hr은 밑줄을 그려줍니다.>
-        <p style="text-align:right">
-            <font size="3em" color="red">문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등</font>
-        </p>
+        
         <br>
         <! br은 줄바꿈입니다.>
 		

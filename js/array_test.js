@@ -1,3 +1,4 @@
+/*
 let empty1 = [ ]; // 빈 배열
 let empty2 = [, , ,]; // 쉼표 개수 = 크기
 let all = [1, 'test', 3.14]; // 다른 데이터 타입 사용 가능 
@@ -12,3 +13,4 @@ console.log(cars); // 배열 출력
 console.log(typeof cars); // 배열 타입 : 객체
 
 document.getElementById("search_message").innerHTML = cars; // 이름 참조
+*/
