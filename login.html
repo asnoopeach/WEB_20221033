@@ -16,7 +16,7 @@
 		<script type="text/javascript" src="js/login.js" defer></script>
 	</head>
 	
-    <body class="text-center">
+    <body class="text-center" onload="init();">
 		
     <br><br><br>
 		<div class="mx-auto" style="width: 300px;">
@@ -36,10 +36,11 @@
         </div>
 
         <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="remember-me"> 이 정보를 저장
-          </label>
-        </div>
+     		<label>
+        		<input type="checkbox" value="remember-me" id="idSaveCheck"> 아이디 기억
+    		</label>
+   		</div>
+
         <button class="w-100 btn btn-lg btn-primary" onclick="login()" type="button">로그인</button>
         <p class="mt-5 mb-3 text-muted">&copy; 2023</p>
           
