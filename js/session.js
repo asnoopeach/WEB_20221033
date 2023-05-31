@@ -45,3 +45,24 @@ function session_del() {//세션 삭제
 }
 
 
+function session_join_set(){ //세션 저장(객체)    
+	let form = document.querySelector("#form_main").value;
+    let y_name = document.querySelector("#yourName").value;
+    let y_email = document.querySelector("#yourEmail").value;
+    let y_password = document.querySelector("#yourPassword").value;
+	let r_password = document.querySelector("#repeatPassword").value;
+
+    
+    const newSignUp = new SignUp(y_name, y_email, y_password, r_password);
+    console.log(newSignUp.fullName); // John Doe
+    console.log(newSignUp.contactInfo); // johndoe@email.com 123-456-7890
+    
+    if (sessionStorage) {
+        const objString = JSON.stringify(newSignUp); // 객체 -> JSON 문자열 변환
+        let en_text = encrypt_text(objString); // 암호화
+        sessionStorage.setItem("Session_Storage_object", objString);
+        sessionStorage.setItem("Session_Storage_encryted", en_text);
+    } else {
+        alert("세션 스토리지 지원 x");
+    }   
+}
