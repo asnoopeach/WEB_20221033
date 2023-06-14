@@ -1,6 +1,6 @@
 var loginFailCount = 0; // 로그인 실패 횟수 카운터
 var loginMaxFailCount = 3; // 로그인 실패 제한 횟수
-var loginTimeInterval = 0.5 * 60 * 1000; // 로그인 유지 시간 (5분)
+var loginTimeInterval = 5 * 60 * 1000; // 로그인 유지 시간 (5분)
 
 
 
